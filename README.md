@@ -1,6 +1,6 @@
 # FinalCapstone
 
-##To run this code:
+## To run this code:
 
   You will need to download Unity(Free). 
 
@@ -58,7 +58,7 @@
 
 
 
-##Known Bugs:
+## Known Bugs:
   
   When I downloaded to another computer, pink squares came out when I started shooting. The particle (type of graphic animation) became corrupt in the process of uploading/downloading/loading.
   
@@ -78,7 +78,7 @@
 
 
 
-##Features:
+## Features:
   
   This game was meant to be kind-of a second-person shooter. First-person shooters fall short by not giving you the peripheral view of a real first-person experience so I aimed for a half-way between first person and third person.
   
