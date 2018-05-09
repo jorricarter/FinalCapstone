@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fennec Fox", "Fennec Fox.csproj", "{166C8B71-D113-1BBF-A2C1-6B9FBBF8E019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fennec Fox.Editor", "Fennec Fox.Editor.csproj", "{5D24DBCA-9EFD-9C9C-0014-C33091093C62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{166C8B71-D113-1BBF-A2C1-6B9FBBF8E019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{166C8B71-D113-1BBF-A2C1-6B9FBBF8E019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{166C8B71-D113-1BBF-A2C1-6B9FBBF8E019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{166C8B71-D113-1BBF-A2C1-6B9FBBF8E019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D24DBCA-9EFD-9C9C-0014-C33091093C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D24DBCA-9EFD-9C9C-0014-C33091093C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D24DBCA-9EFD-9C9C-0014-C33091093C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D24DBCA-9EFD-9C9C-0014-C33091093C62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
