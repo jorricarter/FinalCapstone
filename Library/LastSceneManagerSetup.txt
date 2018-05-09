@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Jorri Assets/Logic/Scenes/Level 1.unity
+  isLoaded: 1
+  isActive: 1
