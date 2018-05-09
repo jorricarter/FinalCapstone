@@ -131,6 +131,9 @@
   Your display, stats, the graphic of the weapon you're holding, and shooting effects all change when you pick up a new weapon.
   
   The default gun requires you to 'pull the trigger' each time you want to shoot, but you can pick up an automatic weapon that keeps firing when you hold down the 'trigger'.
-
-
-
+  
+  https://user-images.githubusercontent.com/30512957/39795690-87c31ec4-5317-11e8-839e-fe0faeeb6797.PNG
+  https://user-images.githubusercontent.com/30512957/39795691-87d6c410-5317-11e8-935b-b8975a8bd05d.PNG
+  https://user-images.githubusercontent.com/30512957/39795692-87f22818-5317-11e8-85cd-393805ac2692.PNG
+  https://user-images.githubusercontent.com/30512957/39795693-8803212c-5317-11e8-80e5-ced717553e6b.PNG
+  
