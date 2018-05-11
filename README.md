@@ -51,18 +51,10 @@
   Since I made you disable 'Baked Global Illumination' earlier, you will have a darker version of the game than the version I intended.
 
 
+## Grading
 
-## Description:
+If you look in the bottom navagation pane, it should be very organized to make everything easy to find. To navigate to scripts I think it's something like 'Jorri Assets' > 'Logic' > 'Scripts'. The other half of my work is in the settings for each image, animation, and component like the variations in the enemies' animations, AI, shooting, health, damage, detection field, reward for killing, and such.
 
-  With this project, my goal was to demonstrate that I have learned the skills needed to become a successful developer.
-My initial project was to build a 2D shooting game with enemies and multiple rooms and you said that was enough.
-After seeing how easy Unity was to use, I decided to try for a 3D version instead.
-
-Before showing you the game, I would like to let you know which parts I did not make.
-I tried rewriting the built-in default scripts with my own logic after I looked up some documentation, but the mouse wasn't moving the character correctly so after 3 days of trying, I copied the mouse tilt from the built in, but the rest of the movement code is mine.
-Other than that, I wrote all of the game logic and scripts. I decided, making textures and drawing 3D enemies would take too much time and would not help demonstrate my programming capabilities so I used free assets from the Unity store to stand in as my art for the player, enemies, walls, and background ambience.
-The assets I loaded were from older versions of unity and I had to rewrite a little code to get them to work so it's not like they were easy to use anyway.
-I also created the level using free walls, ceilings and lights.
 
 ## Known Bugs:
   
@@ -79,9 +71,6 @@ I also created the level using free walls, ceilings and lights.
   The drones (first enemy) don't have death animation, they just disappear. This is because the drones I used are from an older version of unity that isn't entirely compatible with the version I used. (I think I disabled all enemy death animations since it wasn't fully tested and earlier bugs realted to those scripts made the level untestable.)
   
   Difficulty picking up the weapon. This isn't frequent. I am 99% sure this is because I said the player has to be looking at the weapon and a certain distance from it so I probably have to adjust the distance in my script. (Unity default is usually pressing 'enter' to pick up.)
-
-
-
 
 
 ## Features:
@@ -240,8 +229,3 @@ Here is my initial list of features. It is simpler and quicker, but some things 
 ![capture1](https://user-images.githubusercontent.com/30512957/39795691-87d6c410-5317-11e8-935b-b8975a8bd05d.PNG)
 ![capture2](https://user-images.githubusercontent.com/30512957/39795692-87f22818-5317-11e8-85cd-393805ac2692.PNG)
 ![capture3](https://user-images.githubusercontent.com/30512957/39795693-8803212c-5317-11e8-80e5-ced717553e6b.PNG)
-
-  
-## Grading
-
-If you look in the bottom navagation pane, it should be very organized to make everything easy to find. To navigate to scripts I think it's something like 'Jorri Assets' > 'Logic' > 'Scripts'. The other half of my work is in the settings for each image, animation, and component like the variations in the enemies' animations, AI, shooting, health, damage, detection field, reward for killing, and such.
