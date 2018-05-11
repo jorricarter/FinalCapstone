@@ -87,59 +87,104 @@ I also created the level using free walls, ceilings and lights.
 ## Features:
   
 Vision/Movement/Background/Ambience/Controller:
+
 I programmed the game to interperet arrow keys as directions related to the camera's view using the position and direction of the camera. It sounds so simple, but it took a few days.
+
 I rewrote the viewing script multiple times because of things like turning the camera moves the player, but turning the player moves the camera in the opposite direction.
+
 I created the map and got free footstep sounds from youtube.
+
 I got this mostly working on a controller, but one joystick doesn't work.
 
+
 Animation:
+
 I blended animations and made algorithyms for what speeds and motions would trigger which animations and to what degree.
+
 I set variables and formulas for individual graphics like shooting graphic when 'shooting' is true or running blend when speed is between 0 and 1.
+
 I couldn't get the drone death animation working so they just disappear after death. 
+
 I think I disable all enemy death animations because they weren't fully tested and I didn't want them to cause problems during presentation.
 
+
 Bullet/Particle/Sound:
+
 I made the logical bullet fire from the player's perspective while the visual bullet fires from the gun.
+
 I made the bullet myself from scratch using a cyllinder and adding some metallic reflection effects.
+
 I created pooling logic for bullets to avoid lag that comes when instantiating hundreds of bullets for machine guns.
+
 Pooling logic is where I load 200 bullets when the game starts and when the game needs a bullet, instead of creating a hundreds of bullets at once, it takes the already-made bullets tells them where to start, which direction to move and at what speed. If the game uses more bullets than what is in the pool, the pool will create more and add them to the pool for reuse.
+
 I made multiple effects for when I shoot such as sparks, smoke, sound, visual bullets, and the logic involved in where and how to make these graphics appear.
 
+
 Colliders/Chasing:
+
 I created colliders in enemies, alligned them with the visual appearance of the enemies and created logic on how to handle collisions with walls, bullets, too close to character. (bullet holes and 'personalSpace' don't work.)
+
 Each type of enemy has it's own parameters to handle the logic for chasing the player from speed to how to handle obstacles. This was necessary to make animations look more realistic and make floating enemies work.
+
 The ground tiles I used from the free asset wouldn't let the player or enemies move after adding a navigation mesh so I made the floor tiles incorporeal, Then I created a new invisible floor that he walks on instead of the crooked visible one. It turns out the tiles were slightly crooked.
+
 Enemies emit particles/sounds/bullets when shooting and have their own 'firepoint' and, sounds.
+
 I fixed enemies shooting the instant they see you.
+
 Enemies can pass through walls, but you can't. They can only do this when chasing you. I decided to get more functional things done instead of focus on animations for phasing through walls.
 
+
 Components:
+
 Half of my work you can't see is in the component settings like how with each character, you have to choose the position, height, rotation using parents, size, collider shapes, navmesh, animation blending, health, AI logic/detection, rewards, set up sounds, shooting graphics, firepoints, damage, and such.
+
 I applied variations of animations to each enemy so identical enemies wouldn't have identical 'idle' motions.
-randomize attackrate a little so enemies dont all shoot in the same pattern.
+
+I added a 'variance' variable to randomize time inbetween shots a little so enemies dont all shoot in the same pattern.
+
 
 Crosshair/Ammo/Health/Death:
+
 I made an HUD with icons, health, weapon display, ammo, crosshair, and death animation.
+
 The crosshair is on a canvas saparate from the rest of the display with its own properties like how it interacts with objects. It doesn't appear to be targeting the user when looking down and it will vanish when the player is looking at a game object. It phases into the wall at a close distance. 
+
 I made the crosshair image myself, created the animation for it frame-by-frame. It animates when you shooting by animating the canvas it's on.
+
 Ammo and Health display updates every frame. The health animates its size.
+
 Can't shoot if ammo is zero and if you get more than 100 ammo, you only carry 100 at a time.
+
 I made another canvas for the gameover screen because it looked much better than my original gameover screen.
+
 For gameover, I disable player movement after death, but can still look around like in some games.
+
 if you see redundant things like 2 gameover screens or 2 different kinds of shooting scripts for the player it's because I rewrote a lot of my code after adding more advanced components and thinking of better was to have the components interact.
 
+
 Weapon/Display/Automatic:
+
 I added a weapon you can pickup.
+
 When you look at a weapon, an HUD appears telling you stats about it like its name, firepower, firerate, and how its stats match up to your current weapon.
+
 I added weapon names/icons. long names change the text format as well as the font size.
+
 The new gun appears in your hands.
+
 made guns iterable so if I made more, I could loop through them to see which ones are active(equiped) and store that in temp variable before deactivating and using other logic.
+
 I made default messages show errors with details and this helped me notice problems behind the scenes like when ammo counters stopped loading.
+
 The new weapon has different stats, a different style of shooting, and slightly different animations.
+
 I changed gun shooting styles to fit automatic. Also made it so when new gun is disabled, stats go back to previous gun.
+
 The new-weapon logic is a little wonky because I never planned on adding it, but I would make it more modular if I could go back and do it again.
 
-Summarized list:
+Here is my initial list of features. It is simpler and quicker, but some things are out of order and it doesn't mention logic features like 'pooling' logic or 'variance' logic.
 
   I made arrow keys move relative to the player's perspective.
   
